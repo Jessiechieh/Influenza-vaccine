@@ -1,0 +1,109 @@
+:root {
+  color-scheme: light;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --bg: #f7f7fb;
+  --card: #ffffff;
+  --text: #1a1a1a;
+  --muted: #5a667a;
+  --accent: #2f6fed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  padding: 32px 20px 16px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.card a {
+  margin-top: 8px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.detail {
+  background: var(--card);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.detail h1 {
+  margin-top: 0;
+}
+
+.detail dl {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 12px 16px;
+  margin: 24px 0 0;
+}
+
+.detail dt {
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.detail dd {
+  margin: 0;
+}
+
+.back {
+  display: inline-flex;
+  margin-top: 24px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
