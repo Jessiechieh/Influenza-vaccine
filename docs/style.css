@@ -1,0 +1,146 @@
+:root {
+  color-scheme: light;
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --text: #182033;
+  --muted: #5f6b7a;
+  --accent: #3366ff;
+  --border: #e0e6f1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+}
+
+.site-header {
+  padding: 48px 0 32px;
+  background: linear-gradient(135deg, #ecf2ff, #ffffff);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header h1 {
+  margin: 0 0 12px;
+  font-size: 2.4rem;
+}
+
+.subtitle {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.meta {
+  margin: 0;
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  padding: 32px 0 48px;
+}
+
+.hospital-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px;
+  border-radius: 16px;
+  background: var(--card);
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--border);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hospital-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.hospital-card span,
+.hospital-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.hospital-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(20, 38, 92, 0.1);
+}
+
+.card {
+  background: var(--card);
+  padding: 24px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  margin: 32px 0 48px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 16px 0 0;
+}
+
+.info-grid dt {
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.info-grid dd {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.button {
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.button.secondary {
+  background: #eef1f8;
+  color: var(--text);
+}
+
+.back-link {
+  display: inline-flex;
+  margin-bottom: 12px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 20px 0 40px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
